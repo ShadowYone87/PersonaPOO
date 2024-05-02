@@ -1,7 +1,7 @@
 public class Persona {
-    String nombre,apellido;
-    int edad;
-    double altura;
+    private String nombre,apellido;
+    private int edad;
+    private double altura;
     
     public void mostrarNombreA() {
         System.out.println("Mi nombre es:"+this.nombre+apellido);
