@@ -1,26 +1,34 @@
 import java.util.Scanner;
 public class MainPersona {
         public static void main(String[] args) {
-        Scanner p1 = new Scanner(System.in);
-            
+        Scanner opc = new Scanner(System.in);
+        Persona p1 = new Persona();    
      System.out.println("Ingresa nombre y apellido");
-        String nombre =p1.next();
-        String apellido=p1.next();
+        p1.setNombre(opc.next());
+        p1.setApellido(opc.next());
         System.out.println("Ingresa tu edad");
-        int edad=p1.nextInt();
+        p1.setEdad(opc.nextInt());
         System.out.println("Ingresa tu altura");
-        double altura=p1.nextDouble();
-        
+        p1.setAltura(opc.nextDouble());
+        System.out.println(p1);
+        p1.getNombre();
+        p1.getApellido();
+        p1.getEdad();
+        p1.getAltura();
+        Scanner sc = new Scanner(System.in);
         Persona p2 = new Persona();
-        p2.nombre=nombre;
-        p2.apellido= apellido;
-        p2.edad= edad;
-        p2.altura=altura;
-        p2.mostrarNombreA();
-        p2.mostrarEdad();
-        p2.mostrarAtura();
-        
-
+        System.out.println("Ingresa nombre y apellido");
+        p2.setNombre(sc.next());
+        p2.setApellido(sc.next());
+        System.out.println("Ingresa tu edad");
+        p2.setEdad(sc.nextInt());
+        System.out.println("Ingresa tu altura");
+        p2.setAltura(sc.nextDouble());
+        System.out.println(p2);
+        p2.getNombre();
+        p2.getApellido();
+        p2.getEdad();
+        p2.getAltura();
 
     }
 }
